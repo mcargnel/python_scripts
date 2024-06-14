@@ -15,8 +15,7 @@ print(df)
 
 # %%
 # Melt dataframe, to get a single column with "Score"
-melted_df = pd.melt(df, id_vars=['ID', 'Name'], value_vars=['Math', 'Science'], var_name='Subject', value_name='Score')
-
+melted_df = pd.melt(df, id_vars=['ID', 'Name'], value_vars=['Math', 'Science'], var_name='Subject', value_name='Score') #  if non value_vars it uses all vars except id_vars
 melted_df
 
 # %%
